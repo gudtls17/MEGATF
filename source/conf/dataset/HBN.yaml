@@ -1,0 +1,9 @@
+name: hbn
+batch_size: 32
+test_batch_size: 32
+val_batch_size: 32
+train_set: 0.7
+val_set: 0.1
+path: V:/hschoi/Area/Data/MetaNeurosynth/HBN_CNADHD.npy
+stratified: True
+drop_last: True
