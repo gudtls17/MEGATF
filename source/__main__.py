@@ -36,7 +36,7 @@ def reset_wandb_env():
 def model_training(cfg: DictConfig):
 
     with open_dict(cfg):
-        cfg.unique_id = datetime.now().strftime("%m-%d-%H-%M-%S") + f"_seed{cfg.repeat_time}_main"
+        cfg.unique_id = datetime.now().strftime("%m-%d-%H-%M-%S") + f"_seed{cfg.seed}_main"
 
     split_index = split_factory(cfg)  # [train_index_list, test_index_list]
     
@@ -78,8 +78,8 @@ def main(cfg: DictConfig):
     # auc_list = []
     # sen_list = []
     # spec_list = []
-    # seeds = list(range(cfg.repeat_time))
-    seeds = list([cfg.repeat_time])
+    # seeds = list(range(cfg.seed))
+    seeds = list([cfg.seed])
     for it in range(len(seeds)):
         SEED = seeds[it]
         random.seed(
