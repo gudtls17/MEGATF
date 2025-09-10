@@ -1,4 +1,4 @@
-# Integrating meta-analysis in multi-modal brain studies with graph-based attention transformer
+# Integrating meta-analysis in multi-modal brain studies with graph-based attention transformer
 
 
 Official page of "Integrating meta-analysis in multi-modal brain studies with graph-based attention transformer" (MICCAI 2025)
